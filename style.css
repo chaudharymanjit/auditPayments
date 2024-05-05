@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: beige;
+    height: 100vh;
+}
+
+header {
+    background-color: aquamarine;
+    height: 18vh;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#heading {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+#quote {
+    text-align: right;
+    width: 40%;
+    position: relative;
+    left: 25rem;
+    font-size: 1.3rem;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+    margin-bottom: 2rem;
+
+}
+
+
+#giveStatus {
+    font-family: 'Shantell Sans', cursive;
+    color: green;
+    font-size: 1.7rem;
+}
+
+#takeStatus {
+    font-family: 'Shantell Sans', cursive;
+    color: red;
+    font-size: 1.7rem;
+}
+
+#Given {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.5rem;
+    color: black;
+}
+
+#Taken {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.5rem;
+    color: black;
+}
+
+#userOptions {
+    height: 5vh;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    /* justify-items: center; */
+}
+
+.usropt {
+    margin-right: 1.5rem;
+}
+
+#search {
+    text-align: center;
+    width: 25%;
+    border: 1px solid black;
+}
+
+.inp {
+    text-align: center;
+    width: 10%;
+    border: 1px solid black;
+}
+
+.btn {
+    background-color: ghostwhite;
+    color: black;
+    font-weight: 600;
+    width: 10%;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 0.7rem;
+}
+
+.btn:hover {
+    cursor: grab;
+    color: brown;
+}
+
+#dropDown {
+    background-color: ghostwhite;
+    color: black;
+    font-weight: 400;
+    width: 15%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#userData {
+
+    width: 60%;
+    border: 1px solid black;
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    height: 35vh;
+    overflow: scroll;
+}
+
+#addNew {
+    height: 5vh;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#tableData {
+    text-align: center;
+}
+
+thead {
+    font-size: 1.3rem;
+    font-family: 'Labrada', serif;
+}
+
+tbody {
+    font-size: 1.2rem;
+    overflow: scroll;
+}
+
+.btn:hover {
+    background-color: #3e8e41
+}
+
+.btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.chng {
+    padding: .5rem 1rem;
+}
+
+.extras {
+    vertical-align: top;
+}
+
+footer {
+    background-color: bisque;
+}
+
+#foot {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+@media (max-width : 700px) {
+    html {
+        font-size: 90%;
+    }
+
+    .inp {
+        font-size: 0.7rem;
+    }
+
+    #searech {
+        font-size: .7rem;
+    }
+
+    #quote {
+        left: 18rem;
+    }
+}
+
+@media (max-width : 580px) {
+    html {
+        font-size: 80%;
+    }
+
+    .inp {
+        font-size: 0.7rem;
+    }
+
+    #search {
+        font-size: .7rem;
+    }
+
+    #quote {
+        left: 18rem;
+    }
+
+    #dropDown {
+        font-size: 0.8rem;
+    }
+
+    thead {
+        font-size: 1rem;
+    }
+
+    tbody {
+        font-size: 0.9rem;
+    }
+
+    .chng {
+        padding: .2rem .7rem;
+    }
+}
+
+@media (max-width : 510px) {
+    #quote {
+        left: 12rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width : 450px) {
+    #quote {
+        font-size: 0.9rem;
+    }
+
+    #dropDown {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width : 400px) {
+    thead {
+        font-size: 0.9rem;
+    }
+
+    tbody {
+        font-size: 0.9rem;
+    }
+
+    .chng {
+        padding: .1rem .5rem;
+    }
+}

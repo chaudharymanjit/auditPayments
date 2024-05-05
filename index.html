@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--HEADING OF THE WEB APP-->
+    <header>
+        <h1 id="heading">EXPENSE MANAGER</h1>
+        <p id="quote"><i>...for your hassle free spends</i></p>
+    </header>
+
+    <!--ACCOUNT STATUS-->
+    <div id="container">
+        <div id="secContainer"><span id="giveStatus">GIVE: </span><span id="Given">&#8377 00</span></div>
+        <div id="secContainer"><span id="takeStatus">TAKE: </span><span id="Taken">&#8377 00</span></div>
+    </div>
+
+
+    <!--ADD PAYEE-->
+    <div id="addData">
+        <form id="addNew">
+            <input name="name" class="usropt inp" type="text" placeholder="Payee Name">
+            <input name="amount" class="usropt inp" type="text" placeholder="Amount [+/-]">
+            <input name="reason" class="usropt inp" type="text" placeholder="Description">
+            <button class="usropt btn">ADD Payee</button>
+        </form>
+    </div>
+
+
+    <!--USER OPTIONS-->
+    <div id="userOptions">
+        <button id="showData" class="usropt btn">Show</button>
+        <input name="search" type="text" id="search" class="usropt" placeholder="Search Payees [Name/Amount]">
+        <select id="dropDown" class="usropt">
+            <option value="time">Sort by Date</option>
+            <option value="name">Sort by Name</option>
+        </select>
+    </div>
+
+
+    <!--USER DATA-->
+    <table style="margin-bottom: 2rem;" id="userData" class="hidden" cellpadding="2" cellspacing="2">
+        <thead valign="top">
+            <tr>
+                <th><u>Name</u></th>
+                <th><u>Give</u></th>
+                <th><u>Take</u></th>
+                <th><u>Tota</u>l</th>
+                <th><u>Delete</u></th>
+            </tr>
+        </thead>
+        <tbody id="tableData"></tbody>
+    </table>
+
+    <footer>
+        <p id="foot"><i>&#169 Manjeet Kumar</i></p>
+    </footer>
+
+
+    <script src="rough.js"></script>
+    <script src="moments.js"></script>
+    <script src="extra.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

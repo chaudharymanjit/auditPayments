@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="heading">Add or View Payee Details</h1>
+    </header>
+
+    <div style="margin-bottom: 5rem;">
+        <h3 style="text-align: center;">Add new transactions details:</h3>
+
+        <form id="addNew">
+            <input name="amount" class="usropt inp" type="text" placeholder="Amount [+/-]">
+            <input name="reason" class="usropt inp" type="text" placeholder="Description">
+            <button class="usropt btn">ADD Payee</button>
+        </form>
+    </div>
+
+    <div>
+        <h3 style="text-align: center; margin-bottom: 2rem;"><button id="showTrans" class="usropt btn">Show
+                Transactions</button></h3>
+        <textarea style="align-items: center;" name="transactions" id="detail" cols="60" rows="40"
+            class="hidden"></textarea>
+    </div>
+
+    <footer>
+        <p id="foot"><i>&#169 AMBER SUMAN</i></p>
+    </footer>
+
+    <script src="rough.js"></script>
+    <script src="moments.js"></script>
+    <script src="extra.js"></script>
+    <script src="detail.js"></script>
+</body>
+
+</html>
